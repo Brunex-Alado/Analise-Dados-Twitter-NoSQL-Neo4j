@@ -1,0 +1,15 @@
+// CONTAR HASHTAGS EM TWEETS ORIGINAIS
+MATCH (t:Tweet)
+WHERE t.tipo_ref IS NULL
+
+MATCH (t)-[:POSSUI]->(h:Hashtag)
+WITH h, COUNT(DISTINCT t) AS total
+ORDER BY total DESC
+LIMIT 1
+
+// GERAR GRAFO
+MATCH (t:Tweet)-[:POSSUI]->(h)
+MATCH (ru:RU {RU: "RU-4961408"})
+
+RETURN h, t, ru
+LIMIT 15;
