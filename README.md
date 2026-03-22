@@ -13,7 +13,6 @@
   <img src="https://img.shields.io/badge/Cypher-Query%20Language-green">
 </div>
 
-<br>
 <br/>
 
 ---
@@ -37,14 +36,14 @@ A análise foi realizada com o objetivo de identificar padrões nos dados coleta
 
 - As relações entre tweets e hashtags foram visualizadas em grafo, permitindo uma análise mais clara da estrutura dos dados. E a hashtag mais utilizada em tweets foi: **issoaglobonaomostra**
 
-| ![image](https://raw.githubusercontent.com/Brunex-Alado/alterar para este local upado no github a imagem no asset: QUESTAO_02-TEMA_II.png) |
+| ![image](https://raw.githubusercontent.com/Brunex-Alado/Analise-Dados-Twitter-NoSQL-Neo4j/refs/heads/main/asset/QUESTAO_02-TEMA_II.png) |
 
 
 <br/>
 
 - Usuário mais ativo identificado com base na quantidade de tweets publicados:
 
-| ![image](https://raw.githubusercontent.com/Brunex-Alado/alterar para este local upado no github a imagem no asset: QUESTAO_03-TEMA_II.png) |
+| ![image](https://raw.githubusercontent.com/Brunex-Alado/Analise-Dados-Twitter-NoSQL-Neo4j/refs/heads/main/asset/QUESTAO_03-TEMA_II.png) |
 
 <br/>
 
@@ -54,18 +53,19 @@ A análise foi realizada com o objetivo de identificar padrões nos dados coleta
 
 Para executar este projeto corretamente, utilize as seguintes versões:
 
-- Neo4j Desktop: 1.6.2  
-- Banco de Dados Neo4j: 4.4.5  
-- Biblioteca APOC: 4.4.0.6  
+- Microsoft Powershell: 7.5+
+- Neo4j Desktop: 1.6.2  (Foi utilizado essa versão, mas pode ser a mais atual)
+- Banco de Dados Neo4j: 4.4.5  (Precisa ser essa versão) 
+- Biblioteca APOC: 4.4.0.6  (Versão compatível com o Banco de Dados)
 
 ---
 
-## 📁 Configuração do Neo4j
+## 🛠️ Configuração do Neo4j
 
-Na pasta **configuracao_neo4j**, você encontrará:
+Na pasta 📁 **"configuracao_neo4j"**, você encontrará:
 
-- Imagens com o passo a passo da configuração do ambiente  
-- Arquivo **apoc.conf**, necessário para habilitar a importação dos arquivos JSON  
+- Imagens com o passo a passo da configuração do ambiente.
+- Arquivo **"apoc.conf"**, necessário para habilitar a importação dos arquivos JSON.
 
 Siga as imagens dessa pasta para configurar corretamente o ambiente antes de executar as queries.
 
@@ -75,7 +75,7 @@ Siga as imagens dessa pasta para configurar corretamente o ambiente antes de exe
 
 Os dados utilizados neste projeto estão na pasta:
 
-tweets_coletados
+📁 **"tweets_coletados"**
 
 Essa pasta contém arquivos JSON com tweets utilizados para análise dentro do Neo4j.
 
@@ -85,8 +85,8 @@ Essa pasta contém arquivos JSON com tweets utilizados para análise dentro do N
 
 As consultas desenvolvidas estão organizadas nos seguintes arquivos:
 
-- questao01.cypher → Responsável pela importação dos dados JSON e criação dos nós e relacionamentos  
-- questao02.cypher → Consulta para identificação da hashtag principal  
-- questao03.cypher → Consulta para análise dos dados (usuário mais ativo)  
+- questao01.cypher → Responsável pela importação dos dados JSON e criação dos nós e relacionamentos.
+- questao02.cypher → Consulta para identificação da hashtag principal.
+- questao03.cypher → Consulta para análise dos dados (usuário mais ativo).
 
 ---
